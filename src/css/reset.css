@@ -25,6 +25,7 @@ a {
 }
 
 button {
+  font-family: inherit;
   cursor: pointer;
 }
 
@@ -33,3 +34,4 @@ img {
   max-width: 100%;
   height: auto;
 }
+
