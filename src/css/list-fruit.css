@@ -1,0 +1,89 @@
+.org-fru-head {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+
+  margin-bottom: 14px;
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+
+.fourth-sec-par {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 100%;
+  max-width: 334px;
+
+  letter-spacing: -0.04em;
+
+  margin-bottom: 64px;
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+
+.fruit-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 14px;
+}
+
+.fruit-item:nth-child(1) {
+  background: #f8766b;
+}
+
+.fruit-item:nth-child(2) {
+  background: #edd251;
+}
+
+.fruit-item:nth-child(3) {
+  background: #9dc262;
+}
+
+.fruit-item:nth-child(4) {
+  background: #bfd663;
+}
+
+.fruit-item:nth-child(5) {
+  background: #e93f29;
+}
+
+.fruit-item:nth-child(6) {
+  background: #db4f4b;
+}
+
+.fruit-item {
+  width: 100%;
+  max-width: 335px;
+  height: 445px;
+
+  padding: 64px 24px 24px 24px;
+
+  border-radius: 20px;
+}
+
+.fruit-name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.04em;
+
+  margin-bottom: 8px;
+}
+
+.plant {
+  letter-spacing: -0.02em;
+}
