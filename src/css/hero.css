@@ -1,35 +1,179 @@
+.hero-section {
+}
+.hero-section .container {
+  position: relative;
+  padding-top: 56px;
+}
 .hero-title {
+  position: absolute;
+  z-index: 100;
+  top: 56px;
+  left: 20px;
+  text-align: center;
   font-style: normal;
+  text-transform: uppercase;
   font-weight: 500;
   font-size: 28px;
-  line-height: 28px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  max-width: 335px;
+}
+
+.back-thumb {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 48px;
+  margin-bottom: 71px;
+  max-width: 335px;
+  max-height: 509px;
+  padding: 12px;
+
+  background: linear-gradient(rgba(174, 19, 50, 1), rgba(174, 19, 50, 1))
+      padding-box,
+    linear-gradient(
+        to top,
+        rgb(255, 255, 255) -1.7%,
+        rgba(255, 255, 255, 0.441769) 30.64%,
+        rgba(255, 255, 255, 0) 76.92%
+      )
+      border-box;
+  border: 1px solid transparent;
+  border-radius: 500px;
 }
 
 .img-thumb {
+  background-image: url(../img/hero-img/hero-mob-img/young-energetic-red-haired-woman-white-t-shirt-holding-tasty-oranges-pink-background\ 1_mob@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 500px;
+  background-position: center;
+  height: 484px;
 }
 
 .shop-btn {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fff;
 }
 
 .btn-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  color: #ae1332;
 }
 
 .motto-text {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 44px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.04em;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  max-width: 279px;
 }
 
 .melon-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 44px;
+  padding-top: 28px;
+  padding-bottom: 40px;
+  max-width: 249px;
+  height: 387px;
+
+  background-color: #a4cb66;
+  border-radius: 500px;
+}
+
+.melon-block .block-text {
+  max-width: 155px;
+  height: 70px;
+}
+
+.melon-block .block-titles {
+  margin-bottom: 72px;
 }
 
 .hash-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+
+  margin-bottom: 44px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 265px;
 }
 
 .hash-item {
+  padding: 12px 32px;
+  width: 125px;
+  height: 38px;
+  border: 1px solid #fff;
+  border-radius: 1000px;
 }
 
 .strawb-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 249px;
+  height: 387px;
+  padding-top: 28px;
+  padding-bottom: 40px;
+
+  background-color: #f5ce13;
+  border-radius: 500px;
+}
+
+.strawb-img {
+  width: 230px;
+  height: 187px;
+}
+
+.strawb-block .block-text {
+  max-width: 163px;
 }
 
 .block-titles {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: -0.04em;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 .block-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
