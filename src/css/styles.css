@@ -57,7 +57,7 @@ body {
 @import url('./hero.css');
 @import url('./fruit-basket.css');
 @import url('./gifs.css');
-@import url('./list-fruit.css');
+@import url('/list-fruit.css');
 @import url('./btn-fresh-box.css');
 @import url('./input-order.css');
 @import url('./footer.css');
