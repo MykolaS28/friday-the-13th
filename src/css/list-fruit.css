@@ -1,0 +1,59 @@
+.org-fru-head {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+
+.fourth-sec-par {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+
+.fruit-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 14px;
+}
+
+.fruit-list:nth-child(1) {
+  background: #f8766b;
+}
+
+.fruit-list:nth-child(2) {
+  background: #edd251;
+}
+
+.fruit-list:nth-child(3) {
+  background: #9dc262;
+}
+
+.fruit-list:nth-child(4) {
+  background: #bfd663;
+}
+
+.fruit-list:nth-child(5) {
+  background: #e93f29;
+}
+
+.fruit-list:nth-child(6) {
+  background: #db4f4b;
+}
+
+.fruit-item {
+  width: 335px;
+  height: 445px;
+
+  border-radius: 20px;
+}
