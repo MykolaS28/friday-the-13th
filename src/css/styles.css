@@ -4,6 +4,7 @@
   | default @import url()
   |============================
 */
+@import url('./reset.css');
 :root {
  
 
@@ -24,6 +25,9 @@ body {
     color: #fff;
     
 }
+.sections {
+  background-color: rgba(174, 19, 50, 1);
+}
 
 .container {
   margin: 0 auto;
@@ -31,7 +35,7 @@ body {
   padding-right: 20px;
   max-width: 375px;
   outline: 1px solid #000000;
-  background-color: rgba(174, 19, 50, 1);
+  
 }
 
 @media screen and (min-width: 768px) {
@@ -48,8 +52,7 @@ body {
   }
 }
 
-@import url('./reset.css');
-@import url('./container.css');
+
 @import url('./header.css');
 @import url('./hero.css');
 @import url('./fruit-basket.css');
