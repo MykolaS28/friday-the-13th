@@ -37,11 +37,11 @@
   max-height: 509px;
   padding: 11px;
 
-  background: linear-gradient(rgba(174, 19, 50, 1), rgba(174, 19, 50, 1)) padding-box,
+  background: linear-gradient(to top, rgb(174, 19, 50) 0%, rgba(174, 19, 50, 1) 70%, rgba(174, 19, 50, 0)30%) padding-box,
     linear-gradient(to top,
-      rgb(255, 255, 255) -1.7%,
-      rgba(255, 255, 255, 0.441769) 30.64%,
-      rgba(255, 255, 255, 0) 76.92%) border-box;
+      rgb(255, 255, 255) 0%,
+      rgba(255, 255, 255, 0.441769) 30%,
+      rgba(255, 255, 255, 0) 70%) border-box;
   border: 1px solid transparent;
   border-radius: 500px;
 }
