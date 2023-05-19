@@ -1,14 +1,73 @@
 <header>
-  <section>
-    <div class="container">
-      <!--Код-->
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolores
-        provident, voluptatem, quia impedit ipsam sunt tenetur optio minus
-        tempore perferendis, aliquam hic necessitatibus ut cum eum qui cumque
-        sequi.
-      </p>
-      <!--Код-->
+  <div class="container page-header-container">
+    <!--Код-->
+    <nav class="page-nav">
+      <ul class="menu">
+        <li class="menu-item">
+          <a href="./fruit-basket.html">How It Works</a>
+        </li>
+        <li class="menu-item">
+          <a href="./list-fruit.html">Fruits</a>
+        </li>
+        <li class="menu-item">
+          <a href="./input-order.html">Contacts</a>
+        </li>
+      </ul>
+      <a class="logo" href="../index.html">
+        <svg class="logo-icon" width="16" height="16">
+          <use href="../img/sprite.svg#logo"></use>
+        </svg>
+        <span class="logo-text">fresh harvest box</span>
+      </a>
+    </nav>
+    <button class="header-basket mobile-menu-btn" type="button">
+      <svg class="basket-icon" width="28" height="28">
+        <use href="../img/sprite.svg#basket"></use>
+      </svg>
+    </button>
+    <button class="menu-open-btn" type="button" data-menu-open>
+      <svg class="menu-open-icon" width="24" height="24">
+        <use href="../img/sprite.svg#menu-burger"></use>
+      </svg>
+    </button>
+    <!--Код-->
+  </div>
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" data-menu>
+    <div class="mobile-nav-container">
+      <nav class="container mobile-nav">
+        <a class="logo" href="../index.html">
+          <svg class="logo-icon" width="16" height="16">
+            <use href="../img/sprite.svg#logo"></use>
+          </svg>
+          <span class="logo-text">fresh harvest box</span>
+        </a>
+        <button class="mobile-menu-close-btn" type="button" data-menu-close>
+          <svg class="mobile-menu-close-icon" width="24" height="24">
+            <use href="../img/sprite.svg#menu-close"></use>
+          </svg>
+        </button>
+      </nav>
     </div>
-  </section>
+    <div class="container mobile-menu-container">
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
+          <a href="./fruit-basket.html">How It Works</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="./list-fruit.html">Fruits</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="./input-order.html">Contacts</a>
+        </li>
+        <li class="mobile-menu-item">
+          <button class="mobile-menu-btn" type="button">
+            <svg class="basket-icon" width="28" height="28">
+              <use href="../img/sprite.svg#basket"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
 </header>
