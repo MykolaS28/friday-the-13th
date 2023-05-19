@@ -7,7 +7,7 @@
 
   background-image: url(../img/hero-img/hero-mob-img/banana_mob@1x.png), url(../img/hero-img/hero-mob-img/strawberry_mob@1x.png);
   background-repeat: no-repeat;
-  background-position: top 119px left 8px, top 56px left 299px;
+  background-position: top 119px left 8px, top 56px right 0;
 }
 
 .hero-title {
@@ -24,7 +24,6 @@
   letter-spacing: -0.04em;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   max-width: 335px;
-  height: 118px;
 }
 
 .back-thumb {
@@ -187,7 +186,6 @@
 }
 
 .strawb-img {
-  width: 100%;
   height: 100%;
   object-fit: cover;
 }
