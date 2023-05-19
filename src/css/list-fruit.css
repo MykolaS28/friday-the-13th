@@ -42,11 +42,16 @@
 
 @media screen and (min-width: 768px) {
   .fruit-list {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 
     gap: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .fruit-list {
+    gap: 24px;
   }
 }
 
@@ -55,7 +60,7 @@
 
   width: 100%;
   max-width: 335px;
-  height: 445px;
+  height: 465px;
 
   padding: 64px 24px 24px 24px;
 
