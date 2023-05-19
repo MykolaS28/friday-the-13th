@@ -15,6 +15,7 @@
   z-index: 150;
   top: 56px;
   left: 20px;
+  right: 20px;
   text-align: center;
   font-style: normal;
   text-transform: uppercase;
@@ -46,7 +47,7 @@
 }
 
 .hero-back {
-  background-image: url(../img/hero-img/hero-mob-img/young-energetic-red-haired-woman-white-t-shirt-holding-tasty-oranges-pink-background\ 1_mob@1x.jpg);
+  background-image: url(../img/hero-img/hero-mob-img/young-energetic-red-haired-woman-white-t-shirt-holding-tasty-oranges-pink-background_mob@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 500px;
@@ -96,6 +97,7 @@
 }
 
 .melon-block {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,9 +131,14 @@
 }
 
 .melon-img {
-  width: 100%;
+  position: relative;
+  z-index: 100;
   height: 100%;
   object-fit: cover;
+}
+
+.melon-thumb .shadow {
+  top: 228px;
 }
 
 .hash-list {
@@ -155,6 +162,7 @@
 }
 
 .strawb-block {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -180,14 +188,24 @@
 }
 
 .strawb-thumb {
-  width: 163px;
+  width: 162px;
   height: 185px;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 }
 
 .strawb-img {
+  position: relative;
+  z-index: 100;
   height: 100%;
   object-fit: cover;
+}
+
+.shadow {
+  position: absolute;
+  z-index: 50;
+  top: 208px;
+  left: 5px;
+  height: 38px;
 }
 
 .block-titles {
