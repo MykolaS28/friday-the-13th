@@ -310,11 +310,11 @@
         
 }
 .modal-form-input:not(:placeholder-shown):required:valid {
-border: 1px solid #A4CB66;
+outline: 1px solid #A4CB66;
 
 }
 .modal-form-input:not(:placeholder-shown):required:invalid {
-  border-color: red;
+  outline: 1px solid red;
 }
 .modal-form-text {
     width: 100%;
@@ -325,7 +325,7 @@ border: 1px solid #A4CB66;
     letter-spacing: -0.04em;
     color: #000000;
     resize: none;
-    outline: none;
+    
 }
 
 .input-modal-wrapper {
