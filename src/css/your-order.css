@@ -258,6 +258,9 @@
 .order-item-img-wrapper-p {
     margin-top: 6px;
 }
+.span-wrap {
+    display: block;
+}
 .order-item-img-wrapper {
     display: flex;
     justify-content: space-between; 
