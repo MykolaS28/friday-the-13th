@@ -1,3 +1,19 @@
+.list-fruit-section .container {
+  padding-bottom: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+  .list-fruit-section .container {
+    padding-bottom: 144px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .list-fruit-section .container {
+    padding-bottom: 150px;
+  }
+}
+
 .org-fru-head {
   font-weight: 500;
   font-size: 28px;
@@ -169,4 +185,69 @@
   line-height: 1.33;
 
   letter-spacing: -0.04em;
+}
+
+@media only screen and (min-width: 375px) {
+  .fruit-item-img {
+    max-width: 295px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .fruit-item-img {
+    transform: translateX(-4px);
+  }
+}
+
+.order-btn {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 44px;
+  background-color: #9dc262;
+}
+@media only screen and (min-width: 768px) {
+  .order-btn {
+    width: 114px;
+    height: 114px;
+  }
+}
+
+.order-btn span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+
+  display: block;
+  margin-left: 15px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  transform: rotate(-14deg);
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .order-btn span {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.button-svg {
+  position: absolute;
+  left: 7px;
+  bottom: 26px;
+}
+
+@media only screen and (min-width: 768px) {
+  .button-svg {
+    left: 18px;
+    bottom: 39px;
+  }
 }
