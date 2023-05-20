@@ -2,7 +2,7 @@
   <div class="order-content">
     <button class="close-modal js-modal-close" type="button">
       <svg width="24" height="24">
-        <use href="../img/order-test.svg#icon-madal-close-btn"></use>
+        <use href="./img/order-test.svg#icon-madal-close-btn"></use>
       </svg>
     </button>
 
@@ -19,7 +19,7 @@
           <label class="order-item-label" for="order-box-1">
             <span class="modal-fake-checkbox">
               <svg class="modal-fake-svg">
-                <use href="../img/order-test.svg#icon-checkbox"></use>
+                <use href="./img/order-test.svg#icon-checkbox"></use>
               </svg>
             </span>
             <div class="order-item-img-wrapper">
@@ -27,14 +27,39 @@
                 <p class="order-item-basket">Strawberry Basket</p>
                 <p>Plant</p>
               </div>
-
-              <img
-                class="width-strawberry"
-                src="../img/your-order/mobile-strawberry@1x.png"
-                alt="strawberry basket"
-                width="88"
-                height="95px"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/your-order/desk-strawberry@1x.png 1x,
+                    ./img/your-order/desk-strawberry@2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                  type="image/png"
+                />
+                <source
+                  srcset="
+                    ./img/your-order/tablet-strawberry@1x.png 1x,
+                    ./img/your-order/tablet-strawberry@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/png"
+                />
+                <source
+                  srcset="
+                    ./img/your-order/mobile-strawberry@1x.png 1x,
+                    ./img/your-order/mobile-strawberry@2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  type="image/png"
+                />
+                <img
+                  class="width-strawberry"
+                  src="./img/your-order/mobile-strawberry@1x.png"
+                  alt="strawberry basket"
+                  width="88"
+                  height="95px"
+                />
+              </picture>
             </div>
           </label>
         </li>
@@ -48,7 +73,7 @@
           <label class="order-item-label" for="order-box-2">
             <span class="modal-fake-checkbox">
               <svg class="modal-fake-svg">
-                <use href="../img/order-test.svg#icon-checkbox"></use>
+                <use href="./img/order-test.svg#icon-checkbox"></use>
               </svg>
             </span>
 
@@ -60,31 +85,31 @@
               <picture>
                 <source
                   srcset="
-                    ../img/your-order/desk-apple@1x.png 1x,
-                    ../img/your-order/desk-apple@2x.png 2x
+                    ./img/your-order/desk-apple@1x.png 1x,
+                    ./img/your-order/desk-apple@2x.png 2x
                   "
                   media="(min-width: 1280px)"
                   type="image/png"
                 />
                 <source
                   srcset="
-                    ../img/your-order/tablet-apple@1x.png 1x,
-                    ../img/your-order/tablet-apple@2x.png 2x
+                    ./img/your-order/tablet-apple@1x.png 1x,
+                    ./img/your-order/tablet-apple@2x.png 2x
                   "
                   media="(min-width: 768px)"
                   type="image/png"
                 />
                 <source
                   srcset="
-                    ../img/your-order/mobile-apple@1x.png 1x,
-                    ../img/your-order/mobile-apple@2x.png 2x
+                    ./img/your-order/mobile-apple@1x.png 1x,
+                    ./img/your-order/mobile-apple@2x.png 2x
                   "
                   media="(min-width: 320px)"
                   type="image/png"
                 />
                 <img
                   class="order-item-img"
-                  src="../img/your-order/mobile-apple@1x.png"
+                  src="./img/your-order/mobile-apple@1x.png"
                   alt="Apple Basket"
                   width="106"
                   height="95px"
@@ -103,25 +128,48 @@
           <label class="order-item-label" for="order-box-3">
             <span class="modal-fake-checkbox">
               <svg class="modal-fake-svg">
-                <use href="../img/order-test.svg#icon-checkbox"></use>
+                <use href="./img/order-test.svg#icon-checkbox"></use>
               </svg>
             </span>
-            <!-- <p class="order-item-basket">Fruits Basket</p>
-            <p>Plant</p>
-            <img src="../img/your-order/mobile-fruits@1x.png" alt="" /> -->
+
             <div class="order-item-img-wrapper">
               <div class="order-item-img-wrapper-p">
                 <p class="order-item-basket">Fruits Basket</p>
                 <p>Plant</p>
               </div>
-
-              <img
-                class="order-item-img"
-                src="../img/your-order/mobile-fruits@1x.png"
-                alt="Fruits Basket"
-                width="107"
-                height="95px"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/your-order/desk-fruits@1x.png 1x,
+                    ./img/your-order/desk-fruits@2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                  type="image/png"
+                />
+                <source
+                  srcset="
+                    ./img/your-order/tablet-fruits@1x.png 1x,
+                    ./img/your-order/tablet-fruits@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/png"
+                />
+                <source
+                  srcset="
+                    ./img/your-order/mobile-fruits@1x.png 1x,
+                    ./img/your-order/mobile-fruits@2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  type="image/png"
+                />
+                <img
+                  class="order-item-img"
+                  src="./img/your-order/mobile-fruits@1x.png"
+                  alt="Fruits Basket"
+                  width="107"
+                  height="95px"
+                />
+              </picture>
             </div>
           </label>
         </li>
