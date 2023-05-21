@@ -57,44 +57,30 @@
 }
 
 .basket-item {
-  max-width: 335px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  width: 335px;
+  height: 112px;
+
+  background: #fff;
+  border-radius: 20px;
 }
+
 @media only screen and (min-width: 768px) {
   .basket-item {
-    max-width: 389px;
+    width: 389px;
+    height: 128px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .basket-item {
+    height: 129px;
   }
 }
 
-.container-first-step {
-  display: flex;
-  align-items: center;
-
-  gap: 14px;
-  padding: 20px;
-
-  border-radius: 20px;
-  background: #fff;
-}
-.container-second-step {
-  display: flex;
-  align-items: center;
-
-  gap: 14px;
-  padding: 20px;
-
-  border-radius: 20px;
-  background: #fff;
-}
-.container-third-step {
-  display: flex;
-  align-items: center;
-
-  gap: 14px;
-  padding: 20px;
-
-  border-radius: 20px;
-  background: #fff;
-}
 .basket-item-title {
   display: flex;
   justify-content: center;
@@ -106,7 +92,7 @@
   letter-spacing: -0.04em;
 
   width: 136px;
-  max-height: 48px;
+  height: 48px;
 
   border-radius: 200px;
 }
@@ -138,7 +124,7 @@
     max-width: 199px;
   }
 }
-@media only screen and (min-width: 1268px) {
+@media only screen and (min-width: 1280px) {
   .basket-item-text {
     max-width: 166px;
   }
