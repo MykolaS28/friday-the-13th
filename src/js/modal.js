@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+
 
    var modalButtons = document.querySelectorAll('.js-open-modal'),
        overlay      = document.querySelector('.js-overlay-modal'),
@@ -55,4 +55,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-});

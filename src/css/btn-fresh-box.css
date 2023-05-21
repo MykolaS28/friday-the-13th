@@ -1,0 +1,89 @@
+.fresh-box-images {
+    border-radius: 20px;
+    /* width: 335px;
+    height: 476px; */
+
+}
+/* @media only screen and (min-width: 768px) {
+.fresh-box-images{
+    width: 344px;
+    height: 480px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+   .fresh-box-images{
+    width: 792px;
+    height: 592px;
+
+  }
+} */
+
+.last-title{
+    font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 1;
+      text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+      margin: auto;
+    
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+
+      position: relative;
+      z-index: 101;
+      max-width: 335px;
+      top: 43px
+}
+@media only screen and (min-width: 768px) {
+   .last-title{
+    font-size: 54px;
+    max-width: 648px;
+    top: 30px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+   .last-title{
+    font-size: 64px;
+    max-width: 740px;
+    top: 40px;
+  }
+}
+
+.blueberry-img{
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+   .blueberry-img{
+    display: flex;
+  }
+}
+.fresh-box {
+  position: relative;
+}
+
+/* .last-title {
+  position: relative;
+  z-index: 101;
+  max-width: 335px;
+  top: 43px
+  
+} */
+.fresh-box-list{
+  /* gap: 16px; */
+}
+@media only screen and (min-width: 768px) {
+  .fresh-box-list {
+    display: flex;
+    gap: 16px;
+  } 
+}
+@media only screen and (min-width: 1280px) {
+  .fresh-box-list {
+  
+    gap: 24px;
+  }
+}

@@ -7,14 +7,47 @@
 
   background-image: url(../img/hero-img/hero-mob-img/banana_mob@1x.png), url(../img/hero-img/hero-mob-img/strawberry_mob@1x.png);
   background-repeat: no-repeat;
-  background-position: top 119px left 8px, top 56px right 0;
+  background-position: top 107px left 13px, top 51px right 20px;
+  background-size: 66px, 56px;
 }
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero-section .container {
+    background-image: url(../img/hero-img/hero-mob-img/banana_mob@2x.png), url(../img/hero-img/hero-mob-img/strawberry_mob@2x.png);
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .hero-section .container {
+    padding-top: 102px;
+    padding-bottom: 144px;
+    background-image: url(../img/hero-img/hero-tab-img/banana_tab@1x.png), url(../img/hero-img/hero-tab-img/strawberry_tab@1x.png);
+    background-position: top 159px left 27px, top 55px right 37px;
+    background-size: 155px 130px, 111px 111px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero-section .container {
+      background-image: url(../img/hero-img/hero-tab-img/banana_tab@2x.png), url(../img/hero-img/hero-tab-img/strawberry_tab@2x.png);
+    }
+  }
+
+}
+
+
 
 .hero-title {
   position: absolute;
   z-index: 150;
   top: 56px;
   left: 20px;
+  right: 20px;
   text-align: center;
   font-style: normal;
   text-transform: uppercase;
@@ -26,6 +59,17 @@
   max-width: 335px;
 }
 
+@media only screen and (min-width:768px) {
+  .hero-title {
+    font-size: 50px;
+    line-height: 1.08;
+    top: 64px;
+    left: 32px;
+    right: 32px;
+    max-width: 704px;
+  }
+}
+
 .back-thumb {
   position: relative;
   z-index: 50;
@@ -34,7 +78,7 @@
   margin-bottom: 71px;
   max-width: 335px;
   max-height: 509px;
-  padding: 11px;
+  padding: 13px 12px;
 
   background: linear-gradient(to top, rgb(174, 19, 50) 0%, rgba(174, 19, 50, 1) 70%, rgba(174, 19, 50, 0)30%) padding-box,
     linear-gradient(to top,
@@ -45,8 +89,17 @@
   border-radius: 500px;
 }
 
+@media only screen and (min-width:768px) {
+  .back-thumb {
+    margin-bottom: 59px;
+    max-width: 486px;
+    max-height: 742px;
+    padding: 20px 17px;
+  }
+}
+
 .hero-back {
-  background-image: url(../img/hero-img/hero-mob-img/young-energetic-red-haired-woman-white-t-shirt-holding-tasty-oranges-pink-background\ 1_mob@1x.jpg);
+  background-image: url(../img/hero-img/hero-mob-img/young-energetic-red-haired-woman-white-t-shirt-holding-tasty-oranges-pink-background_mob@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 500px;
@@ -54,9 +107,35 @@
   height: 484px;
 }
 
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero-back {
+    background-image: url(../img/hero-img/hero-mob-img/young-energetic-red-haired-woman-white-t-shirt-holding-tasty-oranges-pink-background_mob@2x.jpg);
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .hero-back {
+    background-image: url(../img/hero-img/hero-tab-img/young-energetic-red-haired-woman-white-t-shirt-holding-tasty-oranges-pink-background_tab@1x.jpg);
+    height: 702px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero-back {
+      background-image: url(../img/hero-img/hero-tab-img/young-energetic-red-haired-woman-white-t-shirt-holding-tasty-oranges-pink-background_tab@2x.jpg);
+    }
+  }
+
+}
+
 .shop-btn {
   position: absolute;
-  top: 100%;
+  top: 496px;
   left: 50%;
   transform: translate(-50%, -50%);
   border: none;
@@ -65,6 +144,15 @@
   height: 80px;
   border-radius: 50%;
   background-color: #fff;
+}
+
+@media only screen and (min-width:768px) {
+  .shop-btn {
+    top: 700px;
+    left: 50%;
+    width: 114px;
+    height: 114px;
+  }
 }
 
 .btn-text {
@@ -82,6 +170,31 @@
   cursor: pointer;
 }
 
+@media only screen and (min-width:768px) {
+  .btn-text {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1;
+  }
+}
+
+.left-side {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 44px;
+}
+
+@media only screen and (min-width:768px) {
+  .left-side {
+    max-width: 281px;
+    height: 522px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+}
+
 .motto-text {
   margin-left: auto;
   margin-right: auto;
@@ -95,7 +208,14 @@
   max-width: 279px;
 }
 
+@media only screen and (min-width:768px) {
+  .motto-text {
+    margin-left: 0;
+  }
+}
+
 .melon-block {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -103,14 +223,19 @@
 
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 44px;
   padding-top: 28px;
   padding-bottom: 40px;
-  max-width: 249px;
+  width: 249px;
   height: 387px;
 
   background-color: #a4cb66;
   border-radius: 500px;
+}
+
+@media only screen and (min-width:768px) {
+  .melon-block {
+    margin-right: 0;
+  }
 }
 
 .melon-block .block-text {
@@ -129,21 +254,54 @@
 }
 
 .melon-img {
-  width: 100%;
+  position: relative;
+  z-index: 100;
   height: 100%;
   object-fit: cover;
+}
+
+.melon-thumb .shadow {
+  top: 228px;
+}
+
+.right-side {}
+
+@media only screen and (min-width:768px) {
+  .right-side {
+    position: absolute;
+    top: 903px;
+    right: 32px;
+
+    display: flex;
+    flex-direction: column-reverse;
+
+    width: 281px;
+    height: 515px;
+  }
 }
 
 .hash-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   justify-content: center;
 
   margin-bottom: 44px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 265px;
+  width: 265px;
+
+  text-align: center;
+}
+
+@media only screen and (min-width:768px) {
+  .hash-list {
+    justify-content: flex-end;
+    margin-bottom: 0;
+    margin-right: 0;
+    width: 269px;
+    height: 84px;
+  }
 }
 
 .hash-item {
@@ -154,7 +312,14 @@
   border-radius: 1000px;
 }
 
+@media only screen and (min-width:768px) {
+  .hash-item {
+    width: fit-content;
+  }
+}
+
 .strawb-block {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -162,13 +327,20 @@
 
   margin-right: auto;
   margin-left: auto;
-  max-width: 249px;
+  width: 249px;
   height: 387px;
   padding-top: 28px;
   padding-bottom: 40px;
 
   background-color: #f5ce13;
   border-radius: 500px;
+}
+
+@media only screen and (min-width:768px) {
+  .strawb-block {
+    margin-bottom: 44px;
+    margin-left: 0;
+  }
 }
 
 .strawb-block .block-text {
@@ -180,14 +352,24 @@
 }
 
 .strawb-thumb {
-  width: 163px;
+  width: 162px;
   height: 185px;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 }
 
 .strawb-img {
+  position: relative;
+  z-index: 100;
   height: 100%;
   object-fit: cover;
+}
+
+.shadow {
+  position: absolute;
+  z-index: 50;
+  top: 208px;
+  left: 5px;
+  height: 38px;
 }
 
 .block-titles {
