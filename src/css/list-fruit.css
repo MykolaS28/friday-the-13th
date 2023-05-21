@@ -210,7 +210,23 @@
   margin: 0 auto;
   margin-top: 44px;
   background-color: #9dc262;
+  transition: background-color 250ms ease-in, color 250ms ease-in,
+    fill 250ms ease-in;
 }
+
+.order-btn:hover {
+  background-color: #fff;
+}
+
+.order-btn:hover span {
+  color: #9dc262;
+}
+
+.order-btn:hover svg {
+  fill: #9dc262;
+  color: #9dc262;
+}
+
 @media only screen and (min-width: 768px) {
   .order-btn {
     width: 114px;
@@ -243,6 +259,7 @@
   position: absolute;
   left: 7px;
   bottom: 26px;
+  fill: white;
 }
 
 @media only screen and (min-width: 768px) {
