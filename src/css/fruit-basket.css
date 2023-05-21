@@ -1,0 +1,131 @@
+.section-basket {
+  padding-bottom: 80px;
+}
+.container-basket {
+}
+.container-basket-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 44px;
+}
+.basket-title {
+  max-width: 335px;
+
+  text-align: center;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+@media only screen and (min-width: 768px) {
+  .basket-title {
+    max-width: 624px;
+    font-size: 40px;
+    line-height: 1.1;
+  }
+}
+.basket-text {
+  line-height: 1.29;
+
+  max-width: 335px;
+
+  text-align: center;
+  letter-spacing: -0.04em;
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+@media only screen and (min-width: 768px) {
+  .basket-text {
+    max-width: 509px;
+  }
+}
+.basket-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+  .basket-list {
+    gap: 24px;
+  }
+}
+
+.basket-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  width: 335px;
+  height: 112px;
+
+  background: #fff;
+  border-radius: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .basket-item {
+    width: 389px;
+    height: 128px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .basket-item {
+    height: 129px;
+  }
+}
+
+.basket-item-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 18px;
+  line-height: 1.33;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+
+  width: 136px;
+  height: 48px;
+
+  border-radius: 200px;
+}
+
+.basket-item-title.first {
+  padding: 12px 31.5px;
+  background: #ae1332;
+}
+
+.basket-item-title.second {
+  padding: 12px 18px;
+  background: #a1c864;
+}
+.basket-item-title.third {
+  padding: 12px 28px;
+  background: #f5ce13;
+}
+.basket-item-text {
+  max-width: 145px;
+
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+
+  color: #000000;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+@media only screen and (min-width: 768px) {
+  .basket-item-text {
+    max-width: 199px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .basket-item-text {
+    max-width: 166px;
+  }
+}

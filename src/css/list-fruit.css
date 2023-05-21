@@ -1,11 +1,25 @@
+.list-fruit-section .container {
+  padding-bottom: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+  .list-fruit-section .container {
+    padding-bottom: 144px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .list-fruit-section .container {
+    padding-bottom: 150px;
+  }
+}
+
 .org-fru-head {
   font-weight: 500;
   font-size: 28px;
   line-height: 1;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   letter-spacing: -0.04em;
   text-transform: uppercase;
 
@@ -15,27 +29,72 @@
 }
 
 .fourth-sec-par {
-  display: flex;
-  align-items: center;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  letter-spacing: -0.04em;
 
   width: 100%;
   max-width: 334px;
-
-  letter-spacing: -0.04em;
 
   margin-bottom: 64px;
 
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (min-width: 768px) {
+  .fourth-sec-par {
+    max-width: 547px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .fruit-list {
   display: flex;
+  justify-content: center;
   flex-direction: column;
 
   gap: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .fruit-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .fruit-list {
+    gap: 24px;
+  }
+}
+
+.fruit-item {
+  position: relative;
+
+  width: 100%;
+  max-width: 335px;
+  height: 465px;
+
+  padding: 64px 24px 24px 24px;
+
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .fruit-item {
+    max-width: 344px;
+    width: calc((100% - 16px) / 2);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .fruit-item {
+    max-width: 389px;
+    width: calc((100% - 48px) / 3);
+  }
 }
 
 .fruit-item:nth-child(1) {
@@ -62,14 +121,28 @@
   background: #db4f4b;
 }
 
-.fruit-item {
-  width: 100%;
-  max-width: 335px;
-  height: 445px;
+.fruit-item:nth-child(7) {
+  background: #9b5366;
+}
 
-  padding: 64px 24px 24px 24px;
+.fruit-item:nth-child(8) {
+  background: #f47f4c;
+}
 
-  border-radius: 20px;
+.fruit-item:nth-child(9) {
+  background: #98b37e;
+}
+
+@media screen and (max-width: 767px) {
+  .fruit-item:nth-last-child(-n + 3) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .fruit-item:nth-last-child(-n + 1) {
+    display: none;
+  }
 }
 
 .fruit-name {
@@ -85,5 +158,113 @@
 }
 
 .plant {
+  font-size: 18px;
+  line-height: 1.33;
   letter-spacing: -0.02em;
+}
+
+.price {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 136px;
+  height: 48px;
+
+  border-radius: 200px;
+
+  background: #fff;
+  color: #ae1332;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+
+  letter-spacing: -0.04em;
+}
+
+@media only screen and (min-width: 375px) {
+  .fruit-item-img {
+    max-width: 295px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .fruit-item-img {
+    transform: translateX(-4px);
+  }
+}
+
+.order-btn {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 44px;
+  background-color: #9dc262;
+  transition: background-color 250ms ease-in, color 250ms ease-in,
+    fill 250ms ease-in;
+}
+
+.order-btn:hover {
+  background-color: #fff;
+}
+
+.order-btn:hover span {
+  color: #9dc262;
+}
+
+.order-btn:hover svg {
+  fill: #9dc262;
+  color: #9dc262;
+}
+
+@media only screen and (min-width: 768px) {
+  .order-btn {
+    width: 114px;
+    height: 114px;
+  }
+}
+
+.order-btn span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+
+  display: block;
+  margin-left: 15px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  transform: rotate(-14deg);
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .order-btn span {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.button-svg {
+  position: absolute;
+  left: 7px;
+  bottom: 26px;
+  fill: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .button-svg {
+    left: 18px;
+    bottom: 39px;
+  }
 }
