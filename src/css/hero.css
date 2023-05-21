@@ -40,6 +40,23 @@
 
 }
 
+@media only screen and (min-width:1280px) {
+  .hero-section .container {
+    padding-bottom: 150px;
+    background-image: url(../img/hero-img/hero-desk-img/banana_desk@1x.png), url(../img/hero-img/hero-desk-img/strawberry_desk@2x.png);
+    background-position: top 182px left 213px, top 39px right 223px;
+    background-size: 206px 164px, 120px 120px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero-section .container {
+      background-image: url(../img/hero-img/hero-desk-img/banana_desk@2x.png), url(../img/hero-img/hero-desk-img/strawberry_desk@2x.png);
+    }
+  }
+}
 
 
 .hero-title {
@@ -70,6 +87,18 @@
   }
 }
 
+@media only screen and (min-width:1280px) {
+  .hero-title {
+    left: 191px;
+    right: 191px;
+
+    max-width: 898px;
+    height: 198px;
+    font-size: 64px;
+    line-height: 1;
+  }
+}
+
 .back-thumb {
   position: relative;
   z-index: 50;
@@ -95,6 +124,12 @@
     max-width: 486px;
     max-height: 742px;
     padding: 20px 17px;
+  }
+}
+
+@media only screen and (min-width:1280px) {
+  .back-thumb {
+    margin-bottom: 103px;
   }
 }
 
@@ -192,7 +227,17 @@
     margin-left: 0;
     margin-bottom: 0;
   }
+}
 
+@media only screen and (min-width:1280px) {
+  .left-side {
+    position: absolute;
+    top: 408px;
+    left: 62px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
 }
 
 .motto-text {
@@ -277,6 +322,13 @@
 
     width: 281px;
     height: 515px;
+  }
+}
+
+@media only screen and (min-width:1280px) {
+  .right-side {
+    top: 336px;
+    right: 45px;
   }
 }
 
