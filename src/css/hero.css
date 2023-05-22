@@ -4,6 +4,7 @@
   position: relative;
   padding-top: 104px;
   padding-bottom: 80px;
+  max-width: 375px;
 
   background-image: url(../img/hero-img/hero-mob-img/banana_mob@1x.png), url(../img/hero-img/hero-mob-img/strawberry_mob@1x.png);
   background-repeat: no-repeat;
@@ -22,6 +23,7 @@
 
 @media only screen and (min-width:768px) {
   .hero-section .container {
+    max-width: 768px;
     padding-top: 102px;
     padding-bottom: 144px;
     background-image: url(../img/hero-img/hero-tab-img/banana_tab@1x.png), url(../img/hero-img/hero-tab-img/strawberry_tab@1x.png);
@@ -42,6 +44,7 @@
 
 @media only screen and (min-width:1280px) {
   .hero-section .container {
+    max-width: 1280px;
     padding-bottom: 150px;
     background-image: url(../img/hero-img/hero-desk-img/banana_desk@1x.png), url(../img/hero-img/hero-desk-img/strawberry_desk@2x.png);
     background-position: top 182px left 213px, top 39px right 223px;
