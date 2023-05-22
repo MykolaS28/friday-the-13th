@@ -47,17 +47,17 @@ Members:
 Maksym Tkachenko (maks.sansei@gmail.com) - займався секцією header та mobile
 menu.
 
-Maksym Moskalov (max.godnavi133@gmail.com) - займався секцією hero
+Maksym Moskalov (max.godnavi133@gmail.com) - займався секцією hero.
 
-Vadim (verlanov.vadim@gmail.com) - допомагав з секцією hero та займався gif
+Vadim (verlanov.vadim@gmail.com) - допомагав з секцією hero та займався gif.
 
 Nazar (kork.riter@gmail.com) - займався секцією 'Contacts' та модальним вікном
-'Thank you'
+'Thank you'.
 
-Anton (slavkoanton4@gmail.com) - займався секцією 'Fruits'
+Anton (slavkoanton4@gmail.com) - займався секцією 'Fruits'.
 
-Nazar (onazik08072005@gmail.com) - займався секцією 'Fruits'
+Nazar (onazik08072005@gmail.com) - займався секцією 'Fruits'.
 
-Dmytro (vseeshed@gmail.com) - займався секцією 'Footer'
+Dmytro (vseeshed@gmail.com) - займався секцією 'Footer'.
 
-Dmytro (dimakrvchk@gmail.com) - займався секцією 'Contacts'
+Dmytro (dimakrvchk@gmail.com) - займався секцією 'Contacts'.
