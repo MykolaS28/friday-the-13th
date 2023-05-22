@@ -12,7 +12,7 @@
       <form>
         <span class="last-section-form-input-wrapper">
           <input class="last-section-form-input" type="email" name="order_email"   placeholder="Enter email..."
-            id="order_email" required>
+            id="order_email" required  minlength="8" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$">
           <button class="last-section-form-button js-open-modal" data-modal="1" type="submit">Send</button>
         </span>
       </form>
