@@ -55,13 +55,17 @@
   border-radius: 100px;
   outline: none;
   padding: 24px;
-color: #FFFFFF;
 
     
     border: 1px solid rgba(255, 255, 255, 0.3);
     
-    color: rgba(255, 255, 255, 0.5);
         
+}
+.last-section-form-input::placeholder {
+    color: white;
+    
+    opacity: 0.5;
+    
 }
 
 .last-section-form-button {
@@ -71,7 +75,7 @@ color: #FFFFFF;
   transform: translateY(-50%);
   width: 102px;
   border-radius: 100px;
-  height: 48px;
+  height: 100%;
 border: none;
 background-color: #9DC162;
 color: #FFFFFF;
@@ -144,10 +148,10 @@ transition: background-color 250ms ease-in, color 250ms ease-in,
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.overlay-btn.active {
+/* .overlay-btn.active {
     opacity: 1;
     visibility: visible;
-}
+} */
 .modal-content img {
     margin: 68px auto 28px;
 }
