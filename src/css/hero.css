@@ -1,0 +1,456 @@
+.hero-section {}
+
+.hero-section .container {
+  position: relative;
+  padding-top: 104px;
+  padding-bottom: 80px;
+  max-width: 375px;
+
+  background-image: url(../img/hero-img/hero-mob-img/banana_mob@1x.png), url(../img/hero-img/hero-mob-img/strawberry_mob@1x.png);
+  background-repeat: no-repeat;
+  background-position: top 107px left 13px, top 51px right 20px;
+  background-size: 66px, 56px;
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero-section .container {
+    background-image: url(../img/hero-img/hero-mob-img/banana_mob@2x.png), url(../img/hero-img/hero-mob-img/strawberry_mob@2x.png);
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .hero-section .container {
+    max-width: 768px;
+    padding-top: 102px;
+    padding-bottom: 144px;
+    background-image: url(../img/hero-img/hero-tab-img/banana_tab@1x.png), url(../img/hero-img/hero-tab-img/strawberry_tab@1x.png);
+    background-position: top 159px left 27px, top 55px right 37px;
+    background-size: 155px 130px, 111px 111px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero-section .container {
+      background-image: url(../img/hero-img/hero-tab-img/banana_tab@2x.png), url(../img/hero-img/hero-tab-img/strawberry_tab@2x.png);
+    }
+  }
+
+}
+
+@media only screen and (min-width:1280px) {
+  .hero-section .container {
+    max-width: 1280px;
+    padding-bottom: 150px;
+    background-image: url(../img/hero-img/hero-desk-img/banana_desk@1x.png), url(../img/hero-img/hero-desk-img/strawberry_desk@2x.png);
+    background-position: top 182px left 213px, top 39px right 223px;
+    background-size: 206px 164px, 120px 120px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero-section .container {
+      background-image: url(../img/hero-img/hero-desk-img/banana_desk@2x.png), url(../img/hero-img/hero-desk-img/strawberry_desk@2x.png);
+    }
+  }
+}
+
+
+.hero-title {
+  position: absolute;
+  z-index: 150;
+  top: 56px;
+  left: 20px;
+  right: 20px;
+  text-align: center;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  max-width: 335px;
+}
+
+@media only screen and (min-width:768px) {
+  .hero-title {
+    font-size: 50px;
+    line-height: 1.08;
+    top: 64px;
+    left: 32px;
+    right: 32px;
+    max-width: 704px;
+  }
+}
+
+@media only screen and (min-width:1280px) {
+  .hero-title {
+    left: 191px;
+    right: 191px;
+
+    max-width: 898px;
+    height: 198px;
+    font-size: 64px;
+    line-height: 1;
+  }
+}
+
+.back-thumb {
+  position: relative;
+  z-index: 50;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 71px;
+  max-width: 335px;
+  max-height: 509px;
+  padding: 13px 12px;
+
+  background: linear-gradient(to top, rgb(174, 19, 50) 0%, rgba(174, 19, 50, 1) 70%, rgba(174, 19, 50, 0)30%) padding-box,
+    linear-gradient(to top,
+      rgb(255, 255, 255) 0%,
+      rgba(255, 255, 255, 0.441769) 30%,
+      rgba(255, 255, 255, 0) 70%) border-box;
+  border: 1px solid transparent;
+  border-radius: 500px;
+}
+
+@media only screen and (min-width:768px) {
+  .back-thumb {
+    margin-bottom: 59px;
+    max-width: 486px;
+    max-height: 742px;
+    padding: 20px 17px;
+  }
+}
+
+@media only screen and (min-width:1280px) {
+  .back-thumb {
+    margin-bottom: 103px;
+  }
+}
+
+.hero-back {
+  background-image: url(../img/hero-img/hero-mob-img/young-energetic-red-haired-woman-white-t-shirt-holding-tasty-oranges-pink-background_mob@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 500px;
+  background-position: center;
+  height: 484px;
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero-back {
+    background-image: url(../img/hero-img/hero-mob-img/young-energetic-red-haired-woman-white-t-shirt-holding-tasty-oranges-pink-background_mob@2x.jpg);
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .hero-back {
+    background-image: url(../img/hero-img/hero-tab-img/young-energetic-red-haired-woman-white-t-shirt-holding-tasty-oranges-pink-background_tab@1x.jpg);
+    height: 702px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero-back {
+      background-image: url(../img/hero-img/hero-tab-img/young-energetic-red-haired-woman-white-t-shirt-holding-tasty-oranges-pink-background_tab@2x.jpg);
+    }
+  }
+
+}
+
+.shop-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 496px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #ae1332;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.shop-btn:hover,
+.shop-btn:focus {
+  color: #a4cb66;
+}
+
+@media only screen and (min-width:768px) {
+  .shop-btn {
+    top: 700px;
+    left: 50%;
+    width: 114px;
+    height: 114px;
+  }
+}
+
+.btn-text {
+  position: relative;
+  transform: rotate(-14deg);
+
+  width: 49px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (min-width:768px) {
+  .btn-text {
+    width: 72px;
+    height: 56px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1;
+  }
+}
+
+.left-side {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 44px;
+}
+
+@media only screen and (min-width:768px) {
+  .left-side {
+    max-width: 281px;
+    height: 522px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width:1280px) {
+  .left-side {
+    position: absolute;
+    top: 408px;
+    left: 62px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+.motto-text {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 44px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.04em;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  max-width: 279px;
+}
+
+@media only screen and (min-width:768px) {
+  .motto-text {
+    margin-left: 0;
+  }
+}
+
+.melon-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 28px;
+  padding-bottom: 40px;
+  width: 249px;
+  height: 387px;
+
+  background-color: #a4cb66;
+  border-radius: 500px;
+}
+
+@media only screen and (min-width:768px) {
+  .melon-block {
+    margin-right: 0;
+  }
+}
+
+.melon-block .block-text {
+  max-width: 155px;
+  height: 70px;
+}
+
+.melon-block .block-titles {
+  margin-bottom: auto;
+}
+
+.melon-thumb {
+  width: 200px;
+  height: 172px;
+  margin-bottom: 2px;
+}
+
+.melon-img {
+  position: relative;
+  z-index: 100;
+  height: 100%;
+  object-fit: cover;
+}
+
+.melon-thumb .shadow {
+  top: 228px;
+}
+
+.right-side {}
+
+@media only screen and (min-width:768px) {
+  .right-side {
+    position: absolute;
+    top: 903px;
+    right: 32px;
+
+    display: flex;
+    flex-direction: column-reverse;
+
+    width: 281px;
+    height: 515px;
+  }
+}
+
+@media only screen and (min-width:1280px) {
+  .right-side {
+    top: 336px;
+    right: 45px;
+  }
+}
+
+.hash-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+
+  margin-bottom: 44px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 265px;
+
+  text-align: center;
+}
+
+@media only screen and (min-width:768px) {
+  .hash-list {
+    justify-content: flex-end;
+    margin-bottom: 0;
+    margin-right: 0;
+    width: 274px;
+    height: 84px;
+  }
+}
+
+.hash-item {
+  padding: 12px 32px;
+  width: 125px;
+  height: 38px;
+  border: 1px solid #fff;
+  border-radius: 1000px;
+}
+
+@media only screen and (min-width:768px) {
+  .hash-item {
+    width: fit-content;
+  }
+}
+
+.strawb-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  margin-right: auto;
+  margin-left: auto;
+  width: 249px;
+  height: 387px;
+  padding-top: 28px;
+  padding-bottom: 40px;
+
+  background-color: #f5ce13;
+  border-radius: 500px;
+}
+
+@media only screen and (min-width:768px) {
+  .strawb-block {
+    margin-bottom: 44px;
+    margin-left: 0;
+  }
+}
+
+.strawb-block .block-text {
+  max-width: 163px;
+}
+
+.strawb-block .block-titles {
+  margin-bottom: auto;
+}
+
+.strawb-thumb {
+  width: 162px;
+  height: 185px;
+  margin-bottom: 17px;
+}
+
+.strawb-img {
+  position: relative;
+  z-index: 100;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shadow {
+  position: absolute;
+  z-index: 50;
+  top: 208px;
+  left: 5px;
+  height: 38px;
+}
+
+.block-titles {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: -0.04em;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+
+.block-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
