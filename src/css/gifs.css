@@ -1,0 +1,33 @@
+
+.gif-container {
+    padding-bottom: 80px;
+}
+
+.gif-fruit {
+    border-radius: 20px;
+    margin: 0 auto;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 335px;
+    height: 476px;
+}
+
+@media screen and (min-width: 768px) {
+    .gif-fruit {
+        width: 704px;
+    }
+
+    .gif-container {
+        padding-bottom: 144px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .gif-fruit {
+        width: 860px;
+    }
+
+    .gif-container {
+        padding-bottom: 150px;
+    }
+}
