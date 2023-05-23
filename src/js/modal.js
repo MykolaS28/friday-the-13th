@@ -5,6 +5,8 @@
        closeButtons = document.querySelectorAll('.js-modal-close');
 var body = document.body;
 
+    
+
    modalButtons.forEach(function(item){
 
       item.addEventListener('click', function(e) {
