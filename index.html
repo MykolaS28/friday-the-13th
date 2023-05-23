@@ -23,7 +23,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/friday-the-13th/assets/index-65285761.js"></script>
-    <link rel="stylesheet" href="/friday-the-13th/assets/index-199a0198.css">
+    <link rel="stylesheet" href="/friday-the-13th/assets/index-5c951abb.css">
   </head>
   <body>
     <header>
@@ -433,6 +433,7 @@
           minlength="8"
           pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
         />
+
         <!--  -->
         <button type="submit" class="last-section-form-button">
           <span class="js-open-modal send-modal-thanks" data-modal="1"
@@ -446,11 +447,12 @@
   <div class="overlay-btn js-overlay-modal"></div>
   <div class="modal" data-modal="1">
     <div class="modal-content">
-      <span class="close-button js-modal-close">
+      <button class="close-button js-modal-close" type="button">
         <svg class="" width="14" height="14">
           <use href="/friday-the-13th/assets/sprite-4308a447.svg#icon-close-modal"></use>
         </svg>
-      </span>
+      </button>
+
       <img
         src="/friday-the-13th/assets/raspberry@1x-8e011402.png"
         srcset="/friday-the-13th/assets/raspberry@1x-8e011402.png 1x, /friday-the-13th/assets/raspberry@2x-327102e9.png 2x"
