@@ -215,3 +215,11 @@ text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 .last-section-form-input:not(:placeholder-shown):required:invalid {
     outline: 1px solid red;
 }
+
+     .send-modal-thanks {
+        pointer-events: none;
+     }
+         .last-section-form-input:not(:placeholder-shown):required:valid +.last-section-form-button> .send-modal-thanks {
+            pointer-events: all;
+                
+         }
