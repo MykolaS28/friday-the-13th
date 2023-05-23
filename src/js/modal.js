@@ -3,7 +3,9 @@
    var modalButtons = document.querySelectorAll('.js-open-modal'),
        overlay      = document.querySelector('.js-overlay-modal'),
        closeButtons = document.querySelectorAll('.js-modal-close');
+var body = document.body;
 
+    
 
    modalButtons.forEach(function(item){
 
@@ -16,7 +18,7 @@
              modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
 
 
-    
+    body.className = 'modal-for-html-body';
          modalElem.classList.add('active');
          overlay.classList.add('active');
       }); 
@@ -30,7 +32,9 @@
          var parentModal = this.closest('.modal');
 
          parentModal.classList.remove('active');
-         overlay.classList.remove('active');
+          overlay.classList.remove('active');
+          
+          body.className = '';body.className = '';
       });
 
    });

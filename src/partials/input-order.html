@@ -1,12 +1,59 @@
-<section class="sections">
-    <div class="container">
-        <!--Код-->
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolores
-        provident, voluptatem, quia impedit ipsam sunt tenetur optio minus
-        tempore perferendis, aliquam hic necessitatibus ut cum eum qui cumque
-        sequi.
+<section class="last-section sections">
+  <div class="input-order container">
+    <form onsubmit="return false">
+      <p class="order-p">
+        Our boxes are packed with delicious, nutritious fruits and vegetables,
+        perfect for anyone looking to eat healthier or support local farmers.
+        Order your box today and start enjoying the best that nature has to
+        offer!
       </p>
-      <!--Код-->
+      <div class="last-section-form-input-wrapper">
+        <input
+          type="email"
+          class="last-section-form-input"
+          placeholder="Enter email..."
+          name="user-email"
+          required
+          minlength="8"
+          pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
+        />
+
+        <!--  -->
+        <button type="submit" class="last-section-form-button">
+          <span class="js-open-modal send-modal-thanks" data-modal="1"
+            >Send</span
+          >
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div class="overlay-btn js-overlay-modal"></div>
+  <div class="modal" data-modal="1">
+    <div class="modal-content">
+      <button class="close-button js-modal-close" type="button">
+        <svg class="" width="14" height="14">
+          <use href="./img/sprite.svg#icon-close-modal"></use>
+        </svg>
+      </button>
+
+      <img
+        src="./img/thank-you-modal/raspberry@1x.png"
+        srcset="
+          ./img/thank-you-modal/raspberry@1x.png 1x,
+          ./img/thank-you-modal/raspberry@2x.png 2x
+        "
+        alt="raspberry"
+        width="278"
+        height="239"
+      />
+      <h2>tHANK YOU</h2>
+      <p>
+        Thank you for your order! Our team is preparing your box with fresh,
+        delicious fruits and vegetables, and we'll deliver it straight to your
+        doorstep. We appreciate your business and look forward to providing you
+        with the best possible experience!
+      </p>
     </div>
-  </section>
+  </div>
+</section>

@@ -20,12 +20,15 @@
         height: 100%;
         background-color: rgba(46, 47, 66, 0.4);
         overflow-y: auto;
-        overflow-x: hidden;
-
         opacity: 0;
+        
         visibility: hidden;
         pointer-events: none;
 }
+.modal-for-html-body {
+    overflow: hidden;
+}
+
  .modal.active,
  .overlay.active {
      opacity: 1;
@@ -42,9 +45,10 @@
         transform: translate(-50%, 0);
         background: #fff;
         border-radius: 20px;
-        padding: 20px;
-        
+        padding: 20px; 
+        overflow-y: auto;
 }
+
  @media screen and (min-width: 768px) {
     .order-content {
         width: 704px;
@@ -105,6 +109,10 @@
         padding: 0;
         background-color: transparent;
 } 
+.close-modal:hover, .close-modal:focus {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
 @media screen and (min-width: 768px) {
     .close-modal {
         top: 20px;
