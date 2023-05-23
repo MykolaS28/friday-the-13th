@@ -187,3 +187,28 @@
     margin-left: 322px;
   }
 }
+.go-top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  cursor: pointer;
+  display: none;
+  font-size: 20px;
+  color: rgba(0, 51, 153, 0.5);
+  border: 1px solid rgba(0, 51, 153, 0.5);
+  background-color: #fff;
+  padding: 15px 10px;
+  z-index: 1000;
+}
+
+
+.go-top:hover {
+  color: rgba(0, 51, 153, 0.8);
+  border: 1px solid rgba(0, 51, 153, 0.8);
+  background-color: rgba(0, 51, 153, 0.15);
+}
+
+
+.go-top--show {
+  display: block;
+}

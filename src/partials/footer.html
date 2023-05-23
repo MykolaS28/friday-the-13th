@@ -1,13 +1,121 @@
 <footer>
-    <section>
-    <div class="container">
-        <!--Код-->
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolores
-        provident, voluptatem, quia impedit ipsam sunt tenetur optio minus
-        tempore perferendis, aliquam hic necessitatibus ut cum eum qui cumque
-        sequi.
-      </p>
+  <section class="footer">
+    <div class="container footer-container">
+      <!--Код-->
+      <div class="footer-first-second-columns">
+        <div class="img-with-logo">
+          <div class="img-cont">
+            <img
+              class="footer-img"
+              srcset="
+                ./img/footer-img/img_mob335.jpg 335w,
+                ./img/footer-img/img_tab349.jpg 349w,
+                ./img/footer-img/img_mob670.jpg 670w,
+                ./img/footer-img/img_tab698.jpg 698w
+              "
+              sizes="(min-width: 1280px) 349px, (min-width: 768px) 349px, (min-width: 375px) 335px, 100vw"
+              src="./img/footer-img/img_mob335@1x.jpg"
+              alt="girl wiht babanas"
+            />
+          </div>
+          <a class="logo footer-logo" href="#">
+            <svg class="logo-icon" width="16" height="16">
+              <use href="./img/sprite.svg#logo"></use>
+            </svg>
+            <span class="logo-text">fresh harvest box</span>
+          </a>
+        </div>
+        <div class="footer-nav-cont">
+          <nav class="footer-nav">
+            <ul class="footer-nav-menu">
+              <li class="menu-item">
+                <a class="footer-nav-menu-link link" href="#how-it-works"
+                  >How It Works</a
+                >
+              </li>
+              <li class="menu-item">
+                <a class="footer-nav-menu-link link" href="#fruits-list-order"
+                  >Fruits</a
+                >
+              </li>
+              <li class="menu-item">
+                <a class="footer-nav-menu-link link" href="#contacts-email"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="contacts" id="contacts">
+        <ul class="social-media-list list">
+          <li>
+            <a
+              class="social-media-link link"
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="facebook icon"
+            >
+              <svg class="social-madia-icon" width="28" height="28">
+                <use href="./img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="social-media-link link"
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="instagram icon"
+            >
+              <svg class="social-madia-icon" width="28" height="28">
+                <use href="./img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="social-media-link link"
+              href="https://www.youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="youtube icon"
+            >
+              <svg class="social-madia-icon" width="28" height="28">
+                <use href="./img/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <address>
+          <ul class="contacts-list list">
+            <li>
+              <a class="contacts-phone" href="tel:+380684439426"
+                >+380 (68) 443-94-26</a
+              >
+            </li>
+            <li>
+              <a
+                class="contacts-address"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="geolocation"
+                href="https://goo.gl/maps/2Q9HV1UrSRgpwVZA8?coh=178573&entry=tt"
+                ><span class="tablet-address"
+                  >1678 S. Pioneer Road <br />
+                  Salt Lake City <br />UT 84104</span
+                ><span class="mobile-address"
+                  >1678 S. Pioneer Road <br />
+                  Salt Lake City UT <br />
+                  84104</span
+                >
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
       <!--Код-->
     </div>
   </section>
