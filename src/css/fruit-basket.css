@@ -1,5 +1,5 @@
 .section-basket {
-  padding-bottom: 80px;
+  padding-bottom: 44px;
 }
 .container-basket {
 }
@@ -23,6 +23,9 @@
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 @media only screen and (min-width: 768px) {
+  .section-basket {
+      padding-bottom: 80px;
+    }
   .basket-title {
     max-width: 624px;
     font-size: 40px;
