@@ -92,6 +92,7 @@ cursor: pointer;
 transition: background-color 250ms ease-in, color 250ms ease-in,
         fill 250ms ease-in;
 }
+
 .last-section-form-button:hover,
 .last-section-form-button:focus {
     background-color: #FFFFFF;
@@ -142,7 +143,10 @@ transition: background-color 250ms ease-in, color 250ms ease-in,
     
         fill: #FFFFFF;
 }
-
+.close-button:hover,
+.close-button:focus {
+    fill: #AE1332;
+}
 
 .overlay-btn {
     position: fixed;
