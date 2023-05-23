@@ -17,6 +17,7 @@
           minlength="8"
           pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
         />
+
         <!--  -->
         <button type="submit" class="last-section-form-button">
           <span class="js-open-modal send-modal-thanks" data-modal="1"
@@ -30,11 +31,12 @@
   <div class="overlay-btn js-overlay-modal"></div>
   <div class="modal" data-modal="1">
     <div class="modal-content">
-      <span class="close-button js-modal-close">
+      <button class="close-button js-modal-close" type="button">
         <svg class="" width="14" height="14">
           <use href="./img/sprite.svg#icon-close-modal"></use>
         </svg>
-      </span>
+      </button>
+
       <img
         src="./img/thank-you-modal/raspberry@1x.png"
         srcset="

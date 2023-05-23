@@ -140,7 +140,8 @@ transition: background-color 250ms ease-in, color 250ms ease-in,
         top: 27px;
         right: 27px;
         cursor: pointer;
-    
+    background-color: transparent;
+    border: none;
         fill: #FFFFFF;
 }
 .close-button:hover,
