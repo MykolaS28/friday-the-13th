@@ -1,30 +1,33 @@
-const goTopBtn = document.querySelector(".go-top");
+const goTopBtn = $(".go-top");
 
+$(window).on("scroll", trackScroll);
 
-window.addEventListener("scroll", trackScroll);
+goTopBtn.on("click", function () {
+  $("body, html").animate({ scrollTop: 0 }, 800);
+});
 
-goTopBtn.addEventListener("click", goTop);
+$("a[href^='#']").on("click", function (e) {
+  e.preventDefault();
+  var target = $($(this).attr("href"));
+  var position = target.offset().top;
+  $("body, html").animate({ scrollTop: position }, 800);
+  goTop();
+});
 
 function trackScroll() {
-
-  const scrolled = window.pageYOffset;
-
-  const coords = document.documentElement.clientHeight;
+  const scrolled = $(window).scrollTop();
+  const coords = $(window).height();
 
   if (scrolled > coords) {
-
-    goTopBtn.classList.add("go-top--show");
+    goTopBtn.addClass("go-top--show");
   } else {
-
-    goTopBtn.classList.remove("go-top--show");
+    goTopBtn.removeClass("go-top--show");
   }
 }
 
 function goTop() {
-
-  if (window.pageYOffset > 0) {
-  
-    window.scrollBy(0, -25); //другий аргумент - це швидкість скролу
-    setTimeout(goTop, 0); 
+  if ($(window).scrollTop() > 0) {
+    $(window).scrollTop(1);
+    setTimeout(goTop, 0);
   }
 }

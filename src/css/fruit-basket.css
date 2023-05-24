@@ -89,7 +89,7 @@
   justify-content: center;
   align-items: center;
 
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.33;
   font-weight: 400;
   letter-spacing: -0.04em;
@@ -98,6 +98,12 @@
   height: 48px;
 
   border-radius: 200px;
+}
+@media screen and (min-width: 375px) {
+  .basket-item-title {
+    font-size: 18px;
+  }
+  
 }
 
 .basket-item-title.first {
