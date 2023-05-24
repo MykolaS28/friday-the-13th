@@ -35,19 +35,24 @@
      visibility: visible;
     pointer-events: all;
  }
-
 .order-content {
     position: absolute;
-        width: 335px;
-        min-height: 903px;
-        top: 10px;
-        left: 50%;
-        transform: translate(-50%, 0);
-        background: #fff;
-        border-radius: 20px;
-        padding: 20px; 
-        overflow-y: auto;
+    width: 100%;
+    min-height: 903px;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    overflow-y: auto;
 }
+@media screen and (min-width: 375px) {
+    .order-content {
+            width: 335px;
+        }
+}
+
 
  @media screen and (min-width: 768px) {
     .order-content {
