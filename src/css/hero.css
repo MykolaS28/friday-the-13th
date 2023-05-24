@@ -64,6 +64,8 @@
 
 .hero-title {
   position: absolute;
+  display: flex;
+  flex-direction: column;
   z-index: 150;
   top: 56px;
   left: 20px;
