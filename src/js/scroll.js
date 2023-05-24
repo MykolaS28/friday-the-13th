@@ -1,33 +1,40 @@
-const goTopBtn = $(".go-top");
+$(document).ready(function () {
+  const goTopBtn = $(".go-top");
 
-$(window).on("scroll", trackScroll);
+  $(window).on("scroll", function () {
+    trackScroll();
+  });
 
-goTopBtn.on("click", function () {
-  $("body, html").animate({ scrollTop: 0 }, 800);
-});
+  goTopBtn.on("click", function (e) {
+    e.preventDefault();
+    $("html, body").animate({ scrollTop: 0 }, 800);
+  });
 
-$("a[href^='#']").on("click", function (e) {
-  e.preventDefault();
-  var target = $($(this).attr("href"));
-  var position = target.offset().top;
-  $("body, html").animate({ scrollTop: position }, 800);
-  goTop();
-});
+  $("a[href^='#']").on("click", function (e) {
+    e.preventDefault();
+    var target = $($(this).attr("href"));
+    var position = target.offset().top;
 
-function trackScroll() {
-  const scrolled = $(window).scrollTop();
-  const coords = $(window).height();
+    $("html, body").animate({ scrollTop: position }, {
+      duration: 800,
+      start: function () {
+        goTopBtn.removeClass("go-top--show");
+      },
+      complete: function () {
+        window.location.hash = target.selector;
+        goTopBtn.addClass("go-top--show");
+      }
+    });
+  });
 
-  if (scrolled > coords) {
-    goTopBtn.addClass("go-top--show");
-  } else {
-    goTopBtn.removeClass("go-top--show");
+  function trackScroll() {
+    const scrolled = $(window).scrollTop();
+    const windowHeight = $(window).height();
+
+    if (scrolled > windowHeight / 2) {
+      goTopBtn.addClass("go-top--show");
+    } else {
+      goTopBtn.removeClass("go-top--show");
+    }
   }
-}
-
-function goTop() {
-  if ($(window).scrollTop() > 0) {
-    $(window).scrollTop(1);
-    setTimeout(goTop, 0);
-  }
-}
+});
